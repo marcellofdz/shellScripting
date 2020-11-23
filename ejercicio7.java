@@ -13,25 +13,31 @@ class Exercise7
 	{	
 		int vNum1 = Integer.parseInt(args[0]);
 		if ((vNum1 == 0))
-		{
+		{	
+			File file = new File("out.txt");
+			FileOutputStream fos = new FileOutputStream(file);
+			PrintStream ps = new PrintStream(fos);
+			System.setOut(ps);
+			System.setOut(ps);
 			System.out.println("Invalid input. Don't use 0. Try Again");
 			System.exit(2);
 		}
 
 		
-		else if ((vNum1 < 0)) 
+		else if (vNum1 < 0) 
 		{	
-			System.out.println("Invalid input. Don't use negative numbers ["+ vNum1 +"]. Try Again");
-			System.exit(2);
-
-		}
-		else if (vNum1 > 0)
-		{	
-			
-	                File output = new File("out.txt");
-	                FileOutputStream fos = new FileOutputStream(output);
+			//System.out.println("Invalid input. Don't use negative numbers ["+ vNum1 +"]. Try Again");
+	                File file = new File("out.txt");
+	                FileOutputStream fos = new FileOutputStream(file);
 	                PrintStream ps = new PrintStream(fos);
 	                System.setOut(ps);
+			System.setOut(ps);
+			System.out.println("Invalid input. Don't use negative numbers ["+ vNum1 +"]. Try Again");	
+			System.exit(2);
+		}
+
+		else if (vNum1 > 0)
+		{
 			System.out.println("Good One [" + vNum1 + "].");
 		
 		}
