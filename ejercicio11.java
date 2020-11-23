@@ -6,7 +6,7 @@ class Exercise11
 	{
 		int vNum1 = Integer.parseInt(args[0]);
 		
-		 if ( (vNum1 == 0) || (vNum1 < 0))
+		 if ((vNum1 == 0) || (vNum1 < 0))
 		{
 		     System.out.println("Invalid input. Don't use "+ vNum1+ ". Try Again");
 		     System.exit(2);
