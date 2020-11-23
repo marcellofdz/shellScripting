@@ -17,7 +17,7 @@ class Exercise6
 		
 		else if ((vNum1 < 0)) 
 		{	
-			System.out.println("Invalid input. Don't use negative numbers. Try Again");
+			System.out.println("Invalid input. Don't use negative numbers ["+ vNum1 +"]. Try Again");
 			System.exit(2);
 		}
 		else if (vNum1 > 0)
