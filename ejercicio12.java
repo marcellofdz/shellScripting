@@ -23,7 +23,9 @@ class Exercise12
 		     	suma = suma + value1;
 			vNum1 = vInput.nextLine();	    
 		}
-
+		
+		System.out.println(suma); 
+		System.out.println("");
 
 	
 }
